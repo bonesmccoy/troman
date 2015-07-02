@@ -1,0 +1,39 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+  height: 100%;
+}
+
+ body {
+   background-color: #2e2215;
+   position: relative;
+
+ }
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ #logo {
+   max-width: 650px;
+   max-height: 400px;
+   width: 100%;
+   height: 100%;
+   display:block;
+ }
+ .social-links {
+   display: block;
+   font-family: 'Oswald', sans-serif;
+   font-size:16px;
+   text-align:center;
+ }
+
+ .social-links a {
+   color:#B2AB7D;
+ }
