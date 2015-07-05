@@ -31,13 +31,11 @@ html, body {
    height: 100%;
    display:block;
  }
- .social-links {
-   display: block;
-   font-family: 'Oswald', sans-serif;
-   font-size:16px;
-   text-align:center;
+ .band-details {
+     font-family: 'Oswald', sans-serif;
+     font-size:16px;
  }
 
- .social-links a {
+ .band-details a {
    color:#B2AB7D;
  }
