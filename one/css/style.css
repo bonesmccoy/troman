@@ -318,3 +318,13 @@ body {
   width: 100%!important;
   min-width: 100%!important;
 }
+.section-band.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.section-band .band-member {
+  margin: 0px;
+  padding: 0px;
+  max-height: 300px;
+  overflow: hidden;
+}
