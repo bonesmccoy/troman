@@ -1,96 +1,125 @@
+body {
+  font-size:16px;
 
-section {
-  height: 100%;
-}
+  @media (min-width: 768px) {
+    .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
 
-#trophies-logo {
-  max-width: 630px;
-  width:100%;
-}
-
-.intro {
-  display: table;
-  width: 100%;
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.twitter-timeline-rendered {
-  width: 100%!important;
-  min-width: 100%!important;
-}
-
-#band {
-
-  &.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .row {
-    height: 100%;
-    margin: 0;
-    padding-top:50px;
-
-    .band-member {
-      margin: 0px;
-      padding: 0px;
-      height:50%;
-      background-position: center center;
-      overflow:hidden;
-      position:relative;
-
-      h3 {
-        position:absolute;
-        right: 2%;
-        bottom: 2%;
-      }
-
-      &.flash {
-        background-color: @rgba-secondary-1-1;
-        &:hover {
-          background-color:fade(@rgba-secondary-1-1, 80%)
-        }
-      }
-      &.danny {
-        background-color: @rgba-secondary-1-3;
-        &:hover {
-          background-color:fade(@rgba-secondary-1-3, 80%)
-        }
-      }
-      &.lee {
-        background-color: @rgba-secondary-2-3;
-        &:hover {
-          background-color: fade(@rgba-secondary-2-3, 80%)
-        }
-      }
-      &.moyano {
-        background-color: @rgba-secondary-2-4;
-        &:hover {
-          background-color:fade(@rgba-secondary-2-4, 80%)
-        }
-      }
-
-
+    .navbar .navbar-collapse {
+      text-align: center;
     }
   }
-}
 
-#music {
-  .row {
+  section {
+    height: 100%;
+  }
+
+  #trophies-logo {
+    max-width: 630px;
+    width:100%;
+  }
+
+  .intro {
+    display: table;
+    width: 100%;
+    padding: 100px 0;
     text-align: center;
-    color: white;
+    color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-image: url(../img/owl.jpg);
-    height: 100%;
-    padding-top:50px;
   }
 
+  .twitter-timeline-rendered {
+    width: 100%!important;
+    min-width: 100%!important;
+  }
+
+  #band {
+
+    &.container-fluid {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .row {
+
+      margin: 0;
+      padding-top:50px;
+
+      .band-member {
+        margin: 0px;
+        padding: 0px;
+        height:50%;
+        background-position: center center;
+        overflow:hidden;
+        position:relative;
+
+        @media(max-width:768px) {
+          min-height: 300px;
+          max-height: 400px;
+        }
+
+        h3 {
+          position:absolute;
+          right: 2%;
+          bottom: 2%;
+        }
+
+        &.flash {
+          background-color: @color-secondary-1-1;
+          &:hover {
+            background-color:fade(@color-secondary-1-1, 80%)
+          }
+        }
+        &.danny {
+          background-color: @color-secondary-1-3;
+          &:hover {
+            background-color:fade(@color-secondary-1-3, 80%)
+          }
+        }
+        &.lee {
+          background-color: @color-secondary-2-3;
+          &:hover {
+            background-color: fade(@color-secondary-2-3, 80%)
+          }
+        }
+        &.moyano {
+          background-color: @color-secondary-2-4;
+          &:hover {
+            background-color:fade(@color-secondary-2-4, 80%)
+          }
+        }
+      }
+      @media(min-width:768px) {
+        height: 100%;
+      }
+    }
+    @media(max-width: 768px) {
+      height: 1200px;
+    }
+  }
+
+  #music {
+    .row {
+      text-align: center;
+      color: white;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      background-image: url(../img/owl.jpg);
+      background-position: center center;
+      height: 100%;
+      padding-top:50px;
+    }
+
+  }
+
+  #contact {
+
+  }
 }
