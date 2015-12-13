@@ -1,12 +1,19 @@
 
+section {
+  height: 100%;
+}
+
+#trophies-logo {
+  max-width: 630px;
+  width:100%;
+}
+
 .intro {
   display: table;
   width: 100%;
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(../img/troman-main-bg.jpg) no-repeat top center scroll;
-  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -18,20 +25,37 @@
   min-width: 100%!important;
 }
 
-.section-band {
+#band {
+
   &.container-fluid {
     padding-right: 0px;
     padding-left: 0px;
   }
+  .row {
+    height: 100%;
+    margin: 0;
+    padding-top:50px;
 
-  .band-member {
-    margin: 0px;
-    padding: 0px;
-    max-height: 300px;
-    overflow:hidden;
+    .band-member {
+      margin: 0px;
+      padding: 0px;
+      height:50%;
+      background-position: center center;
+      overflow:hidden;
+      position:relative;
 
-    img {
+      h3 {
+        position:absolute;
+        right: 2%;
+        bottom: 2%;
+      }
 
+      &.flash { background-color: @rgba-secondary-1-1;}
+      &.danny { background-color: @rgba-secondary-1-3;}
+      &.lee {background-color: @rgba-secondary-1-3;}
+      &.moyano {background-color: @rgba-secondary-2-4;}
     }
   }
+
+
 }

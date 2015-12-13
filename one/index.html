@@ -77,7 +77,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <h1 class="brand-heading"><img src="img/logo.png" alt="Trophies of Man" title="Trophies of Man" ></h1>
+                        <h1 class="brand-heading">
+                          <img id="trophies-logo" src="img/logo.png" alt="Trophies of Man" title="Trophies of Man" class="image-responsive">
+                        </h1>
                          <a href="#music" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -91,40 +93,38 @@
     <section id="music" class="container content-section low-padding text-center">
         <div class="row">
           <div class="col-lg-12">
-            <a class="twitter-timeline" href="https://twitter.com/TrophiesOfMan" data-chrome="transparent" data-widget-id="617790451005947905">Tweets by @TrophiesOfMan</a>
+           <!-- <a class="twitter-timeline" href="https://twitter.com/TrophiesOfMan" data-chrome="transparent" data-widget-id="617790451005947905">Tweets by @TrophiesOfMan</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
+          --></div>
         </div>
     </section>
 
     <!-- music Section -->
-    <section id="band" class="section-band container-fluid">
+    <section id="band" class="container-fluid">
         <div class="row">
-          <div class="col-sm-6 band-member">
-            <img src="http://lorempixel.com/800/600/nightlife/Flash-vocals" class="img-responsive">
+          <div class="col-sm-6 band-member flash" >
+            <h3>Flash</h3>
           </div>
-          <div class="col-sm-6 band-member">
-            <img src="http://lorempixel.com/800/600/nightlife/Danny-guitars" class="img-responsive">
+          <div class="col-sm-6 band-member danny">
+            <h3>danny</h3>
           </div>
-          <div class="col-sm-6 band-member">
-            <img src="http://lorempixel.com/800/600/nightlife/Lee-Bass" class="img-responsive">
+          <div class="col-sm-6 band-member lee">
+            <h3>lee</h3>
           </div>
-          <div class="col-sm-6 band-member">
-            <img src="http://lorempixel.com/800/600/nightlife/Moyano-drums" class="img-responsive">
+          <div class="col-sm-6 band-member moyano">
+            <h3>moyano</h3>
           </div>
 
         </div>
     </section>
 
     <!-- live-shows Section -->
-    <section id="live-shows" class="content-section text-center">
-        <div class="live-shows-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>live-shows</h2>
-                    <p>Bandsintown</p>
-                </div>
-            </div>
+    <section id="live-shows" class="container content-section low-padding text-center">
+       <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+              <h2>live-shows</h2>
+              <p>Bandsintown</p>
+          </div>
         </div>
     </section>
 
@@ -166,11 +166,8 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/trophiesofman.js"></script>
 
 </body>
 
