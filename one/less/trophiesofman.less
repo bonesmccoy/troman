@@ -50,12 +50,47 @@ section {
         bottom: 2%;
       }
 
-      &.flash { background-color: @rgba-secondary-1-1;}
-      &.danny { background-color: @rgba-secondary-1-3;}
-      &.lee {background-color: @rgba-secondary-1-3;}
-      &.moyano {background-color: @rgba-secondary-2-4;}
+      &.flash {
+        background-color: @rgba-secondary-1-1;
+        &:hover {
+          background-color:fade(@rgba-secondary-1-1, 80%)
+        }
+      }
+      &.danny {
+        background-color: @rgba-secondary-1-3;
+        &:hover {
+          background-color:fade(@rgba-secondary-1-3, 80%)
+        }
+      }
+      &.lee {
+        background-color: @rgba-secondary-2-3;
+        &:hover {
+          background-color: fade(@rgba-secondary-2-3, 80%)
+        }
+      }
+      &.moyano {
+        background-color: @rgba-secondary-2-4;
+        &:hover {
+          background-color:fade(@rgba-secondary-2-4, 80%)
+        }
+      }
+
+
     }
   }
+}
 
+#music {
+  .row {
+    text-align: center;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: url(../img/owl.jpg);
+    height: 100%;
+    padding-top:50px;
+  }
 
 }

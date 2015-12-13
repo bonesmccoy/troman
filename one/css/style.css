@@ -119,7 +119,6 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #546DA6;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 .intro {
@@ -352,12 +351,35 @@ section {
 #band .row .band-member.flash {
   background-color: #f8f870;
 }
+#band .row .band-member.flash:hover {
+  background-color: rgba(248, 248, 112, 0.8);
+}
 #band .row .band-member.danny {
   background-color: #6d6d32;
 }
+#band .row .band-member.danny:hover {
+  background-color: rgba(109, 109, 50, 0.8);
+}
 #band .row .band-member.lee {
-  background-color: #6d6d32;
+  background-color: #6d3232;
+}
+#band .row .band-member.lee:hover {
+  background-color: rgba(109, 50, 50, 0.8);
 }
 #band .row .band-member.moyano {
   background-color: #6d1818;
+}
+#band .row .band-member.moyano:hover {
+  background-color: rgba(109, 24, 24, 0.8);
+}
+#music .row {
+  text-align: center;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-image: url(../img/owl.jpg);
+  height: 100%;
+  padding-top: 50px;
 }
