@@ -8,7 +8,6 @@
 
 }
 
-
 @-moz-keyframes scaleBackground {
   0% {
     background-size: 100%;
@@ -24,5 +23,34 @@
   }
   100% {
     background-size: 120%;
+  }
+}
+
+
+@-webkit-keyframes scaleBgImage {
+  0% {
+    .transform(scale(1,1));
+  }
+  100% {
+    .transform(scale(1.1,1.1));
+  }
+
+}
+
+@-moz-keyframes scaleBgImage {
+  0% {
+    .transform(scale(1,1));
+  }
+  100% {
+    .transform(scale(1.1,1.1));
+  }
+
+}
+@keyframes scaleBgImage {
+  0% {
+    .transform(scale(1,1));
+  }
+  100% {
+    .transform(scale(1.1,1.1));
   }
 }

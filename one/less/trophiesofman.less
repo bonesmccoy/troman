@@ -87,7 +87,16 @@ body {
         }
 
         &.flash {
-          background: @color-secondary-1-1 url(../img/flash.jpg) center center;
+          .image {
+            background: @color-secondary-1-1 url(../img/flash.jpg) center center;
+            width:100%;
+            height:100%;
+            &:hover {
+              -webkit-animation: scaleBgImage 5s ease-out infinite alternate;
+              -moz-animation: scaleBgImage 5s ease-out  infinite alternate;
+              animation: scaleBgImage 5s ease-out infinite alternate;
+            }
+          }
         }
         &.danny {
           background: @color-secondary-1-3 url(../img/danny.jpg) center center;
