@@ -1,5 +1,29 @@
 @import '../css/bootstrap.min.css';
 @import '../css/font-awesome.min.css';
+@-webkit-keyframes scaleBackground {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+@-moz-keyframes scaleBackground {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+@keyframes scaleBackground {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
 /* Main Primary color */
 /* Main Secondary color (1) */
 /* Main Secondary color (2) */
@@ -40,7 +64,7 @@ p {
   }
 }
 a {
-  color: #49111c;
+  color: #f2f4f3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -48,7 +72,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #000000;
+  color: #bbc5c0;
 }
 .light {
   font-weight: 400;
@@ -57,7 +81,6 @@ a:focus {
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #546DA6;
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
@@ -75,7 +98,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: #49111c;
+  color: #f2f4f3;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -83,7 +106,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(73, 17, 28, 0.8);
+  color: rgba(242, 244, 243, 0.8);
   outline: none;
   background-color: transparent;
 }
@@ -96,7 +119,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(73, 17, 28, 0.3);
+  background-color: rgba(242, 244, 243, 0.3);
 }
 .navbar-custom .nav li.active a:hover {
   color: #0a0908;
@@ -113,7 +136,6 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #546DA6;
   }
 }
 .intro {
@@ -302,14 +324,31 @@ body {
 body {
   font-size: 16px;
 }
+body .navbar #trophies-home {
+  display: none;
+}
 @media (min-width: 768px) {
   body .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-  body .navbar .navbar-collapse {
+    width: 100%;
     text-align: center;
+  }
+  body .navbar .navbar-nav > li {
+    float: none;
+    display: inline-block;
+    padding: 0 1%;
+  }
+  body .navbar #trophies-home {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (min-width: 800px) {
+  body .navbar .navbar-nav > li {
+    padding: 0 2%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1220px) {
+  body .navbar .navbar-nav > li {
+    padding: 0 5%;
   }
 }
 body section {
@@ -340,7 +379,6 @@ body #band.container-fluid {
 }
 body #band .row {
   margin: 0;
-  padding-top: 50px;
 }
 body #band .row .band-member {
   margin: 0px;
@@ -362,28 +400,21 @@ body #band .row .band-member h3 {
   bottom: 2%;
 }
 body #band .row .band-member.flash {
-  background-color: #F8F870;
-}
-body #band .row .band-member.flash:hover {
-  background-color: rgba(248, 248, 112, 0.8);
+  background: #F8F870 url(../img/flash.jpg) center center;
 }
 body #band .row .band-member.danny {
-  background-color: #6D6D32;
-}
-body #band .row .band-member.danny:hover {
-  background-color: rgba(109, 109, 50, 0.8);
+  background: #6D6D32 url(../img/danny.jpg) center center;
 }
 body #band .row .band-member.lee {
-  background-color: #6D3232;
-}
-body #band .row .band-member.lee:hover {
-  background-color: rgba(109, 50, 50, 0.8);
+  background: #6D3232 url(../img/lee.jpg) center center;
 }
 body #band .row .band-member.moyano {
-  background-color: #6D1818;
+  background: #6D1818 url(../img/moy.png) center center;
 }
-body #band .row .band-member.moyano:hover {
-  background-color: rgba(109, 24, 24, 0.8);
+body #band .row .band-member:hover {
+  -webkit-animation: scaleBackground 5s ease-out alternate;
+  -moz-animation: scaleBackground 5s ease-out alternate;
+  animation: scaleBackground 5s ease-out alternate;
 }
 @media (min-width: 768px) {
   body #band .row {
