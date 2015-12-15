@@ -76,8 +76,7 @@ body {
         position:relative;
 
         @media(max-width:768px) {
-          min-height: 300px;
-          max-height: 400px;
+          height: 300px;
         }
 
         h3 {
@@ -86,34 +85,38 @@ body {
           bottom: 2%;
         }
 
+        .image {
+          width:100%;
+          height:100%;
+          &:hover {
+            -webkit-animation: scaleBgImage 5s ease-out infinite alternate;
+            -moz-animation: scaleBgImage 5s ease-out  infinite alternate;
+            animation: scaleBgImage 5s ease-out infinite alternate;
+          }
+        }
+
         &.flash {
           .image {
             background: @color-secondary-1-1 url(../img/flash.jpg) center center;
-            width:100%;
-            height:100%;
-            &:hover {
-              -webkit-animation: scaleBgImage 5s ease-out infinite alternate;
-              -moz-animation: scaleBgImage 5s ease-out  infinite alternate;
-              animation: scaleBgImage 5s ease-out infinite alternate;
-            }
           }
         }
         &.danny {
-          background: @color-secondary-1-3 url(../img/danny.jpg) center center;
+          .image {
+            background: @color-secondary-1-3 url(../img/danny.jpg) center center;
+          }
         }
 
         &.lee {
-          background: @color-secondary-2-3 url(../img/lee.jpg) center center;
+          .image {
+            background: @color-secondary-2-3 url(../img/lee.jpg) center center;
+          }
         }
         &.moyano {
-          background: @color-secondary-2-4 url(../img/moy.png) center center;
+          .image {
+            background: @color-secondary-2-4 url(../img/moy.png) center center;
+          }
         }
 
-        &:hover {
-          -webkit-animation: scaleBackground 5s ease-out alternate;
-          -moz-animation: scaleBackground 5s ease-out  alternate;
-          animation: scaleBackground 5s ease-out alternate;
-        }
       }
       @media(min-width:768px) {
         height: 100%;

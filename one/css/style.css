@@ -432,8 +432,7 @@ body #band .row .band-member {
 }
 @media (max-width: 768px) {
   body #band .row .band-member {
-    min-height: 300px;
-    max-height: 400px;
+    height: 300px;
   }
 }
 body #band .row .band-member h3 {
@@ -441,29 +440,26 @@ body #band .row .band-member h3 {
   right: 2%;
   bottom: 2%;
 }
-body #band .row .band-member.flash .image {
-  background: #F8F870 url(../img/flash.jpg) center center;
+body #band .row .band-member .image {
   width: 100%;
   height: 100%;
 }
-body #band .row .band-member.flash .image:hover {
+body #band .row .band-member .image:hover {
   -webkit-animation: scaleBgImage 5s ease-out infinite alternate;
   -moz-animation: scaleBgImage 5s ease-out infinite alternate;
   animation: scaleBgImage 5s ease-out infinite alternate;
 }
-body #band .row .band-member.danny {
+body #band .row .band-member.flash .image {
+  background: #F8F870 url(../img/flash.jpg) center center;
+}
+body #band .row .band-member.danny .image {
   background: #6D6D32 url(../img/danny.jpg) center center;
 }
-body #band .row .band-member.lee {
+body #band .row .band-member.lee .image {
   background: #6D3232 url(../img/lee.jpg) center center;
 }
-body #band .row .band-member.moyano {
+body #band .row .band-member.moyano .image {
   background: #6D1818 url(../img/moy.png) center center;
-}
-body #band .row .band-member:hover {
-  -webkit-animation: scaleBackground 5s ease-out alternate;
-  -moz-animation: scaleBackground 5s ease-out alternate;
-  animation: scaleBackground 5s ease-out alternate;
 }
 @media (min-width: 768px) {
   body #band .row {
