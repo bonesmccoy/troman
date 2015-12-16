@@ -70,6 +70,46 @@
     -o-transform: scale(1.1, 1.1);
   }
 }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
 body {
   width: 100%;
   height: 100%;
@@ -249,36 +289,13 @@ a:focus {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
-@-webkit-keyframes pulse {
-  0 {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@-moz-keyframes pulse {
-  0 {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-}
 .content-section {
   padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .content-section {
+    padding-top: 50px;
+  }
 }
 .live-shows-section {
   width: 100%;
@@ -410,6 +427,7 @@ body .intro {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 100%;
 }
 body .twitter-timeline-rendered {
   width: 100%!important;
