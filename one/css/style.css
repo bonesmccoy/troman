@@ -163,20 +163,15 @@ a:focus {
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgba(10, 9, 8, 0.2);
 }
-.navbar-custom .navbar-brand {
-  font-weight: 700;
-}
-.navbar-custom .navbar-brand:focus {
-  outline: none;
-}
-.navbar-custom .navbar-brand .navbar-toggle {
+.navbar-custom .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #0a0908;
+  color: #f2f4f3;
 }
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
   outline: none;
 }
 .navbar-custom a {

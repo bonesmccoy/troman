@@ -58,19 +58,15 @@ a {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    .navbar-brand {
-        font-weight: 700;
-        &:focus {
+    background-color: fade(@tomDarkText, 20%);
+
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: @tomLink;
+        &:focus,
+        &:active {
             outline: none;
-        }
-        .navbar-toggle {
-            padding: 4px 6px;
-            font-size: 16px;
-            color: @tomDarkText;
-            &:focus,
-            &:active {
-                outline: none;
-            }
         }
     }
     a {
