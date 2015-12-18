@@ -394,7 +394,6 @@ body .navbar #trophies-home-sm {
 @media (min-width: 768px) {
   body .navbar .navbar-nav {
     width: 100%;
-    text-align: center;
   }
   body .navbar .navbar-nav > li {
     float: none;
@@ -428,7 +427,6 @@ body #trophies-logo {
 body .intro {
   display: table;
   width: 100%;
-  padding: 100px 0;
   text-align: center;
   color: #fff;
   -webkit-background-size: cover;
@@ -463,8 +461,11 @@ body #band .row .band-member {
 }
 body #band .row .band-member h3 {
   position: absolute;
-  right: 2%;
+  right: 5%;
   bottom: 2%;
+}
+body #band .row .band-member h3 span {
+  text-transform: none;
 }
 body #band .row .band-member .image {
   width: 100%;
@@ -473,6 +474,9 @@ body #band .row .band-member .image {
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   -ms-transition: all 2s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 body #band .row .band-member .image:hover {
   -webkit-transform: scale(1.1, 1.1);
@@ -481,16 +485,16 @@ body #band .row .band-member .image:hover {
   -o-transform: scale(1.1, 1.1);
 }
 body #band .row .band-member.flash .image {
-  background: #F8F870 url(../img/flash.jpg) center center;
+  background-image: url(../img/flash.jpg);
 }
 body #band .row .band-member.danny .image {
-  background: #6D6D32 url(../img/danny.jpg) center center;
+  background-image: url(../img/danny.jpg);
 }
 body #band .row .band-member.lee .image {
-  background: #6D3232 url(../img/lee.jpg) center center;
+  background-image: url(../img/lee.jpg);
 }
 body #band .row .band-member.moyano .image {
-  background: #6D1818 url(../img/moy.png) center center;
+  background-image: url(../img/moy.png);
 }
 @media (min-width: 768px) {
   body #band .row {
