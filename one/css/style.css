@@ -163,11 +163,18 @@ hr {
 .light {
   font-weight: 400;
 }
+.navbar-collapse {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
 .navbar-custom {
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 20px;
-  background-color: rgba(27, 54, 107, 0.2);
+  background-color: rgba(64, 75, 100, 0.9);
 }
 .navbar-custom .navbar-toggle {
   padding: 4px 6px;
@@ -381,6 +388,9 @@ body {
 body .navbar #trophies-home {
   display: none;
 }
+body .navbar #trophies-home-sm {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   body .navbar .navbar-nav {
     width: 100%;
@@ -393,6 +403,9 @@ body .navbar #trophies-home {
   }
   body .navbar #trophies-home {
     display: inline-block;
+  }
+  body .navbar #trophies-home-sm {
+    display: none;
   }
 }
 @media (min-width: 768px) and (min-width: 800px) {
