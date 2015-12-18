@@ -162,7 +162,9 @@ a:focus {
 .navbar-custom {
   margin-bottom: 0;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: open-sans-condensed, sans-serif;
+  /*font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  font-size: 24px;
   background-color: rgba(10, 9, 8, 0.2);
 }
 .navbar-custom .navbar-toggle {
