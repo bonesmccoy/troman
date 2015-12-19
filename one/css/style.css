@@ -434,6 +434,22 @@ body .intro {
   background-size: cover;
   -o-background-size: cover;
   height: 100%;
+  position: relative;
+}
+body .intro #bgvid {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  opacity: 0.3;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
 }
 body .twitter-timeline-rendered {
   width: 100%!important;

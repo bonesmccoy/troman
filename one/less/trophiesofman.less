@@ -55,6 +55,21 @@ body {
     background-size: cover;
     -o-background-size: cover;
     height:100%;
+    position:relative;
+
+
+    #bgvid {
+        position: absolute;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        opacity: 0.3;
+        min-width: 100%;
+        min-height: 100%;
+        .transform(translateX(-50%) translateY(-50%));
+        top: 50%;
+        left: 50%;
+      }
   }
 
   .twitter-timeline-rendered {
