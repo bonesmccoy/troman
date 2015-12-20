@@ -422,6 +422,7 @@ body .intro {
 @media (max-width: 767px) {
   body .intro {
     background-image: url(../video/poster.jpg);
+    background-position: center center;
   }
 }
 body .intro #home-video {
