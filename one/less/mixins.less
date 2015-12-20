@@ -6,6 +6,13 @@
   -moz-box-shadow:    @string;
   box-shadow:         @string;
 }
+
+.shadowfilter (@string: 12px 12px 7px rgba(0,0,0,0.5)) {
+  -webkit-filter: drop-shadow(@string);
+  filter: drop-shadow(@string);
+  -moz-filter: drop-shadow(@string);
+}
+
 .drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
   -webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
   -moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);

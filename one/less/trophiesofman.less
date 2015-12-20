@@ -11,10 +11,14 @@ body {
 
     @media (min-width: 768px) {
       .navbar-nav {
-        width: 100%;
+        width: auto;
+        display: block;
+        float: none;
+        vertical-align: top;
         > li {
           float: none;
           display: inline-block;
+
 
           @media (min-width: 800px) {
             padding: 0 2%;
@@ -24,8 +28,13 @@ body {
             padding: 0 5%;
           }
           padding: 0 1%;
-
+          &.no-padding-left {
+            padding-left: 0px;
+          }
         }
+      }
+      .navbar-collapse {
+        text-align: center;
       }
       #trophies-home {
         display: inline-block;
@@ -56,9 +65,13 @@ body {
     -o-background-size: cover;
     height:100%;
     position:relative;
+    overflow:hidden;
+    @media(max-width: 767px) {
+      background-image: url(../video/poster.jpg);
+    }
 
 
-    #bgvid {
+    #home-video {
         position: absolute;
         width: auto;
         height: auto;
@@ -69,6 +82,9 @@ body {
         .transform(translateX(-50%) translateY(-50%));
         top: 50%;
         left: 50%;
+        @media(max-width:767px) {
+          display:none;
+          }
       }
   }
 

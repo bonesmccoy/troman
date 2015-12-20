@@ -169,12 +169,21 @@ hr {
   -moz-box-shadow: none;
   -o-box-shadow: none;
   -ms-box-shadow: none;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: right;
+  }
+  .navbar-collapse.collapse.in {
+    background-color: rgba(64, 75, 100, 0.9);
+  }
 }
 .navbar-custom {
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 20px;
-  background-color: rgba(64, 75, 100, 0.9);
+  background-color: rgba(64, 75, 100, 0.2);
 }
 .navbar-custom .navbar-toggle {
   padding: 4px 6px;
@@ -257,42 +266,6 @@ hr {
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
-}
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  font-size: 40px;
-  color: white;
-  background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.btn-circle:hover,
-.btn-circle:focus {
-  outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-}
-.btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s;
-}
-.btn-circle:hover i.animated {
-  -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
 }
 .content-section {
   padding-top: 100px;
@@ -393,12 +366,21 @@ body .navbar #trophies-home-sm {
 }
 @media (min-width: 768px) {
   body .navbar .navbar-nav {
-    width: 100%;
+    width: auto;
+    display: block;
+    float: none;
+    vertical-align: top;
   }
   body .navbar .navbar-nav > li {
     float: none;
     display: inline-block;
     padding: 0 1%;
+  }
+  body .navbar .navbar-nav > li.no-padding-left {
+    padding-left: 0px;
+  }
+  body .navbar .navbar-collapse {
+    text-align: center;
   }
   body .navbar #trophies-home {
     display: inline-block;
@@ -435,8 +417,14 @@ body .intro {
   -o-background-size: cover;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
-body .intro #bgvid {
+@media (max-width: 767px) {
+  body .intro {
+    background-image: url(../video/poster.jpg);
+  }
+}
+body .intro #home-video {
   position: absolute;
   width: auto;
   height: auto;
@@ -450,6 +438,11 @@ body .intro #bgvid {
   -o-transform: translateX(-50%) translateY(-50%);
   top: 50%;
   left: 50%;
+}
+@media (max-width: 767px) {
+  body .intro #home-video {
+    display: none;
+  }
 }
 body .twitter-timeline-rendered {
   width: 100%!important;
