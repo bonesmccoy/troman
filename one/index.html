@@ -11,16 +11,12 @@
 
     <title>Trophies of Man</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script src="//use.edgefonts.net/open-sans-condensed:n3.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,82 +31,116 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span class="light">Trophies</span> of Man
-                </a>
-            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Bio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#music">Music</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse  navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                          <a class="page-scroll" id="trophies-home-sm" href="#page-top">Trophies of Man</a>
+                        </li>
+                        <li class="no-padding-left">
+                            <a class="page-scroll" href="#music">Music</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="#band">Band</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" id="trophies-home" href="#page-top">Trophies of Man</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#live-shows">Live</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
     <!-- Intro Header -->
     <header class="intro">
+      <video autoplay loop id="home-video" poster="video/poster.jpg">
+        <source src="video/tom-hp-720.webm" type="video/webm">
+        <source src="video/tom-hp-720.mp4" type="video/mp4">
+      </video>
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><img src="img/logo.png" alt="Trophies of Man" title="Trophies of Man" ></h1>
-                         <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h1 class="brand-heading">
+                          <img id="trophies-logo" src="img/logo.png" alt="Trophies of Man" title="Trophies of Man" class="image-responsive">
+                        </h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <!-- music Section -->
+    <section id="music" class="container-fluid text-center">
         <div class="row">
-          <div class="col-lg-6">
-            <h2>Twitter</h2>
-            <a class="twitter-timeline" href="https://twitter.com/TrophiesOfMan" data-chrome="transparent" data-widget-id="617790451005947905">Tweets by @TrophiesOfMan</a>
+          <div class="col-lg-12">
+
+           <!-- <a class="twitter-timeline" href="https://twitter.com/TrophiesOfMan" data-chrome="transparent" data-widget-id="617790451005947905">Tweets by @TrophiesOfMan</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-          <div class="col-lg-6">
-            <h2>Facebook</h2>
-          </div>
+          --></div>
         </div>
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Bio</h2>
-				<p>A melting pot of rock n' roll, savage grooves and roaring vocals dripping with the licks of a hard blues guitar</p>
-            </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="music" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Music</h2>
-					i<iframe width="560" height="315" src="https://www.youtube.com/embed/_FZ6CfKhECQ?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+    <!-- music Section -->
+    <section id="band" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 band-member flash" >
+              <div class="image"></div>
+            <h3>Flash</h3>
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-sm-6 band-member danny">
+            <div class="image"></div>
+            <h3>danny</h3>
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-sm-6 band-member lee">
+            <div class="image"></div>
+            <h3>lee</h3>
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-sm-6 band-member moyano">
+            <div class="image"></div>
+            <h3>moyano</h3>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+    </section>
+    <!-- live-shows Section -->
+    <section id="live-shows" class="container content-section">
+       <div class="row">
+          <div class="col-sm-12">
+              <div class="text-center"><h2>live-shows</h2></div>
+              <div class="row">
+                <div class="col-xs-3">2015-01-01</div><div class="col-xs-6">Venue name</div><div class="col-xs-3 text-right"><a href="#">Tickets/Info</a></div>
+                <div class="col-xs-12"><hr/></div>
+                <div class="col-xs-3">2015-01-01</div><div class="col-xs-6">Venue name</div><div class="col-xs-3 text-right"><a href="#">Tickets/Info</a></div>
+                <div class="col-xs-12"><hr/></div>
+                <div class="col-xs-3">2015-01-01</div><div class="col-xs-6">Venue name</div><div class="col-xs-3 text-right"><a href="#">Tickets/Info</a></div>
+                <div class="col-xs-12"><hr/></div>
+                <div class="col-xs-3">2015-01-01</div><div class="col-xs-6">Venue name</div><div class="col-xs-3 text-right"><a href="#">Tickets/Info</a></div>
+                <div class="col-xs-12"><hr/></div>
+                <div class="col-xs-3">2015-01-01</div><div class="col-xs-6">Venue name</div><div class="col-xs-3 text-right"><a href="#">Tickets/Info</a></div>
+                <div class="col-xs-12"><hr/></div>
+              </div>
+          </div>
         </div>
     </section>
 
@@ -118,32 +148,27 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                <h2>Contact Trophies of Man</h2>
+                <div class="text-center row">
+                  <div class="col-sm-4">
+                    <a href="https://www.facebook.com/TROPHIESOFMAN" target="_blank"><span class="fa fa-facebook"></span>/trophiesofman</a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="https://twitter.com/trophiesofman"target="_blank"><span class="fa fa-twitter"></span> @TrophiesOfMan</a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a id="mlto"><span class="fa fa-beer"></span> <span id="mdress"> </span></a>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
-
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p>Copyright &copy; tit'house</p>
         </div>
     </footer>
 
@@ -156,11 +181,8 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/trophiesofman.js"></script>
 
 </body>
 
