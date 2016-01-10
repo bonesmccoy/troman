@@ -29,6 +29,30 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+var LiveShows =  {
+
+    load :function() {
+        $.getJSON("data/live.json", {}, function(data){
+            console.log(data);
+            if (data.shows) {
+                var $showListString = '';
+                    $(data.shows).each(function(i,show){
+                        var $date = (show.date) ? show.date : '';
+                        $showListString +=  '<div class="col-xs-3">' + $date + '</div>';
+                        var $venue = (show.venue) ? show.venue : ''
+                        $showListString += '<div class="col-xs-6">' + $venue + '</div>';
+
+                        var $info = (show.info) ? ('<a href="'+ $info +'">Tickets/Info</a>') : '';
+
+                        $showListString += '<div class="col-xs-3 text-right">' + $info + '</div>';
+                        $showListString += '<div class="col-xs-12"><hr/></div>';
+                    });
+                $(".show-list").html($showListString);
+            }
+        }, 'json')
+    }
+};
+
 $(document).ready(function(){
     $(window).load(function(){
         var hash = location.hash.replace('#','');
@@ -42,4 +66,5 @@ $(document).ready(function(){
 
     $("#mlto").attr("href", "mailto" + ":info@tr" + "ophiesofman.com");
     $("#mdress").html("info@tr" + "ophiesofman.com");
+    LiveShows.load();
 });

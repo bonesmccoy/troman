@@ -93,7 +93,7 @@ hr{
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
-        color: @tomLink;
+        color: @color-complement-1;
         &:focus,
         &:active {
             outline: none;
@@ -108,8 +108,9 @@ hr{
                 -webkit-transition: background .3s ease-in-out;
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
+                font-weight: bold;
                 &:hover {
-                    color: fade(@tomLink, 80%);
+                    color: fade(@color-complement-1, 80%);
                     outline: none;
                     background-color: transparent;
                 }
@@ -123,9 +124,6 @@ hr{
                 outline: none;
                 a {
                     background-color: fade(@tomLink, 30%);
-                    &:hover {
-                        color: @tomDarkText;
-                    }
                 }
             }
         }

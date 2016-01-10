@@ -196,7 +196,7 @@ hr {
 .navbar-custom .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #f2f4f3;
+  color: #F8CA70;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
@@ -209,9 +209,10 @@ hr {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
+  font-weight: bold;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(242, 244, 243, 0.8);
+  color: rgba(248, 202, 112, 0.8);
   outline: none;
   background-color: transparent;
 }
@@ -225,9 +226,6 @@ hr {
 }
 .navbar-custom .nav li.active a {
   background-color: rgba(242, 244, 243, 0.3);
-}
-.navbar-custom .nav li.active a:hover {
-  color: #1b366b;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -513,7 +511,7 @@ body #band .row .band-member.lee .image {
   background-image: url(../img/lee.jpg);
 }
 body #band .row .band-member.moyano .image {
-  background-image: url(../img/moy.png);
+  background-image: url(../img/moy.jpg);
 }
 @media (min-width: 768px) {
   body #band .row {
@@ -535,6 +533,9 @@ body #music .row {
   background-image: url(../img/owl.jpg);
   background-position: center center;
   height: 100%;
+  padding-top: 50px;
+}
+body #live-shows .no-shows {
   padding-top: 50px;
 }
 body #contact {
