@@ -7,7 +7,10 @@ body {
     font-family: open-sans-condensed, sans-serif;
     color: @tomText;
     background-color: @color-primary-0;
-    font-size: 18px;
+    font-size: @fontSizeBigRegular;
+    @media(max-width: 767px) {
+      font-size: @fontSizeRegular;
+    }
 }
 
 html {
@@ -28,26 +31,30 @@ h6 {
     letter-spacing: 1px;
 }
 
+h2 {
+  font-size: @fontSizeBiggest;
+}
+
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: @fontSizeRegular;
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: @fontSizeBigRegular;
         line-height: 1.6;
     }
 }
 
 a {
-    color: @tomLink;
+    color: @color-complement-1;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken(@tomLink,20%);
+        color: darken(@color-complement-1,20%);
     }
 }
 
@@ -78,7 +85,7 @@ hr{
 .navbar-custom {
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: @fontSizeNavbar;
     background-color: fade(@color-primary-0, 20%);
 
 
@@ -153,7 +160,7 @@ hr{
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: @fontSizeRegular;
         }
     }
     @media(min-width:768px) {
