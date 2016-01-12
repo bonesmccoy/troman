@@ -2,7 +2,7 @@
     "shows": [{
         "date": "2015-01-01",
         "venue": "Venue name",
-        "info": "http//www.google.com"
+        "info": "http://www.google.com"
         },
         {
             "date": "2015-01-01",
@@ -11,12 +11,12 @@
         {
             "date": "2015-01-01",
             "venue": "Venue name",
-            "info": "http//www.google.com"
+            "info": "http://www.google.com"
         },
         {
             "date": "2015-01-01",
             "venue": "Venue name",
-            "info": "http//www.google.com"
+            "info": "http://www.google.com"
         },
         {
             "date": "2015-01-01",

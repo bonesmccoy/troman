@@ -42,7 +42,7 @@ var LiveShows =  {
                         var $venue = (show.venue) ? show.venue : ''
                         $showListString += '<div class="col-xs-6">' + $venue + '</div>';
 
-                        var $info = (show.info) ? ('<a href="'+ $info +'">Tickets/Info</a>') : '';
+                        var $info = (typeof show.info != 'undefined') ? ('<a href="'+ show.info +'">Tickets/Info</a>') : '';
 
                         $showListString += '<div class="col-xs-3 text-right">' + $info + '</div>';
                         $showListString += '<div class="col-xs-12"><hr/></div>';
