@@ -532,8 +532,9 @@ body #music {
     -o-background-size: cover;*/
   height: 100%;
   position: relative;
+  background-color: #332323;
 }
-body #music:after {
+body #music:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -541,8 +542,8 @@ body #music:after {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  opacity: 0.6;
+  z-index: 0;
+  opacity: 0.3;
   background-image: url(../img/studio.jpg);
   background-repeat: no-repeat;
   background-position: center center;
