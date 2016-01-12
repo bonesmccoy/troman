@@ -523,17 +523,25 @@ body #band .row .band-member.moyano .image {
     height: 1200px;
   }
 }
-body #music .row {
-  text-align: center;
-  color: white;
+body #music {
+  /*background-image: url(../img/owl.jpg);*/
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-image: url(../img/owl.jpg);
-  background-position: center center;
   height: 100%;
-  padding-top: 50px;
+}
+body #music .music-container {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+body #music .music-container .music-body {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
 }
 body #live-shows .no-shows {
   padding-top: 50px;
