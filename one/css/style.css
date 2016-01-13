@@ -588,3 +588,24 @@ body #contact .contact-body {
   display: table-cell;
   vertical-align: middle;
 }
+body .cc_container {
+  font-family: open-sans-condensed, sans-serif !important;
+  background-color: #2E2F33 !important;
+  font-size: 20px;
+}
+body .cc_container .cc_btn {
+  background-color: #404B64 !important;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #F8CA70;
+}
+body .cc_container .cc_btn:visited {
+  background-color: #404B64 !important;
+}
+body .cc_container .cc_btn:hover {
+  background-color: #546DA6 !important;
+}
