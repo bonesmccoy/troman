@@ -534,6 +534,11 @@ body #music {
   position: relative;
   background-color: #332323;
 }
+@media (max-width: 768px) {
+  body #music {
+    height: 1200px;
+  }
+}
 body #music:before {
   content: ' ';
   display: block;
@@ -563,6 +568,15 @@ body #music .music-container .music-body {
   vertical-align: middle;
   height: 100%;
   width: 100%;
+}
+body #music .music-container .music-body .album-cover {
+  width: 100%;
+  max-width: 400px;
+}
+body #music .music-container .music-body iframe.soundcloud-player {
+  height: 100%;
+  max-width: 400px;
+  border: 0px;
 }
 body #live-shows .no-shows {
   padding-top: 50px;

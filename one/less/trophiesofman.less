@@ -185,6 +185,10 @@ body {
     position: relative;
     background-color: #332323;
 
+    @media(max-width: 768px) {
+      height: 1200px;
+    }
+
 
     &:before {
       content: ' ';
@@ -215,6 +219,17 @@ body {
         vertical-align: middle;
         height:100%;
         width: 100%;
+
+        .album-cover {
+          width: 100%;
+          max-width: 400px;
+        }
+
+        iframe.soundcloud-player {
+          height:100%;
+          max-width:400px;
+          border:0px;
+        }
       }
     }
 
