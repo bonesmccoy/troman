@@ -535,8 +535,8 @@ body #music {
   background-color: #332323;
 }
 @media (max-width: 768px) {
-  body #music {
-    height: 1200px;
+  body #music .col-sm-6 {
+    padding: 20px 10px;
   }
 }
 body #music:before {
@@ -573,10 +573,30 @@ body #music .music-container .music-body .album-cover {
   width: 100%;
   max-width: 400px;
 }
-body #music .music-container .music-body iframe.soundcloud-player {
+@media (max-width: 768px) {
+  body #music .music-container .music-body .album-cover {
+    display: none;
+  }
+}
+body #music .music-container .music-body iframe.soundcloud-player-small {
   height: 100%;
   max-width: 400px;
   border: 0px;
+}
+@media (max-width: 768px) {
+  body #music .music-container .music-body iframe.soundcloud-player-small {
+    display: none;
+  }
+}
+body #music .music-container .music-body iframe.soundcloud-player-full {
+  height: 100%;
+  border: 0px;
+  display: none;
+}
+@media (max-width: 768px) {
+  body #music .music-container .music-body iframe.soundcloud-player-full {
+    display: block;
+  }
 }
 body #live-shows .no-shows {
   padding-top: 50px;

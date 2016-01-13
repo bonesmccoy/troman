@@ -185,10 +185,11 @@ body {
     position: relative;
     background-color: #332323;
 
-    @media(max-width: 768px) {
-      height: 1200px;
+    .col-sm-6 {
+      @media(max-width: 768px) {
+        padding: 20px 10px;
+      }
     }
-
 
     &:before {
       content: ' ';
@@ -223,12 +224,27 @@ body {
         .album-cover {
           width: 100%;
           max-width: 400px;
+          @media(max-width: 768px) {
+            display:none;
+          }
         }
 
-        iframe.soundcloud-player {
+        iframe.soundcloud-player-small {
           height:100%;
           max-width:400px;
           border:0px;
+          @media(max-width: 768px) {
+            display:none;
+          }
+        }
+
+        iframe.soundcloud-player-full {
+          height:100%;
+          border:0px;
+          display:none;
+          @media(max-width: 768px) {
+            display:block;
+          }
         }
       }
     }
