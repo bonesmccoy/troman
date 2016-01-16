@@ -118,11 +118,17 @@ body {
         }
 
         h3 {
-          position:absolute;
-          right: 5%;
-          bottom: 2%;
+          position: absolute;
+          bottom: 0;
+          font-size: 35px;
+          width: 100%;
+          text-align: right;
+          padding: 10px 20px;
+          background-color: rgba(0,0,0,.5);
+          margin-bottom: 20px;
+          text-transform: none;
            span {
-             text-transform: none;
+
            }
         }
 
@@ -175,13 +181,6 @@ body {
   }
 
   #music {
-   /* background-image: url(../img/studio.jpg);
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;*/
-    height: 100%;
     position: relative;
     background-color: #332323;
 
@@ -223,7 +222,7 @@ body {
 
         .album-cover {
           width: 100%;
-          max-width: 400px;
+          max-width: 300px;
           @media(max-width: 768px) {
             display:none;
           }
@@ -231,7 +230,7 @@ body {
 
         iframe.soundcloud-player-small {
           height:100%;
-          max-width:400px;
+          max-width:300px;
           border:0px;
           @media(max-width: 768px) {
             display:none;
@@ -262,6 +261,27 @@ body {
     .contact-body {
       display:table-cell;
       vertical-align: middle;
+      position: relative;
+      .footer {
+        position: absolute;
+        width:100%;
+        bottom: 0px;
+        left: 0px;
+      }
     }
+  }
+
+  #credits {
+    .modal-dialog {
+      margin-top: 25%;
+      .modal-content {
+        .border-radius('0px;');
+        .modal-body {
+          background-color: @color-primary-5;
+          color:@tomText;
+        }
+      }
+    }
+
   }
 }
