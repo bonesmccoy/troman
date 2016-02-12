@@ -1,53 +1,241 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Trophies of Man</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/socicon.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trophies of Man</title>
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <script src="//use.edgefonts.net/open-sans-condensed:n3.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-  <div class="centered">
-    <img src="img/logo.jpg" id="logo"/>
-    <div class="band-details">
-      <div class="text-center row">
-        <div class="col-md-3 col-md-offset-3">
-          <a href="https://www.facebook.com/TROPHIESOFMAN" target="_blank"><span class="socicon socicon-facebook"></span>/trophiesofman</a>
-        </div>
-        <div class="col-md-3">
-          <a href="https://twitter.com/trophiesofman"target="_blank"><span class="socicon socicon-twitter"></span> @TrophiesOfMan</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <a id="mlto"><span class="socicon socicon-mail"></span> <span id="mdress"> </span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-  </script>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
 
-  <script src="js/main.js"></script>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse  navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                          <a class="page-scroll" id="trophies-home-sm" href="#page-top">Trophies of Man</a>
+                        </li>
+                        <li class="no-padding-left">
+                            <a class="page-scroll" href="#music">Music</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="#band">Band</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" id="trophies-home" href="#page-top">Trophies of Man</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#live-shows">Live</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <video autoplay loop id="home-video" poster="video/poster.jpg">
+        <source src="video/tom-hp-720.webm" type="video/webm">
+        <source src="video/tom-hp-720.mp4" type="video/mp4">
+      </video>
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h1 class="brand-heading">
+                          <img id="trophies-logo" src="img/logo.png" alt="Trophies of Man" title="Trophies of Man" class="image-responsive">
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- music Section -->
+    <section id="music">
+        <div class="music-container">
+            <div class="music-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Listen to our feature songs.</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img src="img/october-rust-cover.jpg" class="album-cover"/>
+                            <iframe width="100%" height="166" scrolling="no" class='soundcloud-player-small' frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233851753%3Fsecret_token%3Ds-mKcyB&amp;theme_color=000000&amp;color=404b64&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_artwork=false&amp;show_playcount=false"></iframe>
+                            <iframe width="100%" height="166" scrolling="no" class='soundcloud-player-full' frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233851753%3Fsecret_token%3Ds-mKcyB&amp;theme_color=000000&amp;color=404b64&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_artwork=true&amp;show_playcount=false"></iframe>
+
+                            <!-- iframe width="100%" height="600" scrolling="no"  style="height:100%;max-width:600px;border:0px; "frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233851753%3Fsecret_token%3Ds-mKcyB&amp;theme_color=404b64&amp;color=404b64&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe -->
+
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <img src="img/dark-swing-cover.jpg" class="album-cover"/>
+                            <iframe width="100%" height="166" scrolling="no" class='soundcloud-player-small' frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233852867%3Fsecret_token%3Ds-okWw9&amp;theme_color=000000&amp;color=404b64&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_artwork=false&amp;show_playcount=false"></iframe>
+                            <iframe width="100%" height="166" scrolling="no" class='soundcloud-player-full' frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233852867%3Fsecret_token%3Ds-okWw9&amp;theme_color=000000&amp;color=404b64&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_artwork=true&amp;show_playcount=false"></iframe>
+
+                            <!-- iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233852867%3Fsecret_token%3Ds-okWw9&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- band Section -->
+    <section id="band" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 band-member flash" >
+              <div class="image"></div>
+            <h3>Flash</h3>
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-sm-6 band-member danny">
+            <div class="image"></div>
+            <h3>Danny</h3>
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-sm-6 band-member lee">
+            <div class="image"></div>
+            <h3>Lee</h3>
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-sm-6 band-member moyano">
+            <div class="image"></div>
+            <h3>Moyano</h3>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+    </section>
+    <!-- live-shows Section -->
+    <section id="live-shows" class="container content-section">
+       <div class="row">
+          <div class="col-sm-12">
+              <div class="text-center"><h2>Live shows</h2></div>
+              <div class="row show-list">
+                <div class="span-lg-12 text-center no-shows">
+                    <h4>No show scheduled!</h4>
+                    <h5>Book us at <a class="mlto"><span class="mdress"></span></a></h5>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="contact-body">
+            <div class="container  text-center">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Contacts</h2>
+                        <p>
+                            Do you want book us? Wanna have a couple of tequilas with us?<br/>
+                            Give us a shout at <a class="mlto"><span class="mdress"></span></a>
+                        <br/>
+                        ---
+                        <br/>
+                            We are social animals too. Follow us!
+                            <br/>
+                            <a href="https://www.facebook.com/TROPHIESOFMAN" target="_blank"><span class="fa fa-facebook"></span>/trophiesofman</a>
+                            &nbsp; | &nbsp;
+                            <a href="https://twitter.com/trophiesofman"target="_blank"><span class="fa fa-twitter"></span>@TrophiesOfMan</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center footer">
+                    <p>&copy; tit'house | <a href="javascript:void(0)" data-toggle="modal" data-target="#credits">credits</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/trophiesofman.js"></script>
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = { "message": "This website uses cookies to ensure you get the best experience on our website", "dismiss": "Ok! Got it!" , "learnMore":"More info", "link": "cookie.html", "theme":"dark-bottom"};
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+
+    <div class="modal fade" id="credits" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>Credits</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">Website</div>
+                        <div class="col-sm-9">Danny McCoy</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">Photos</div>
+                        <div class="col-sm-9">
+                            <p>
+                                Sally Newhouse<br/>
+                                Vins Villaplana
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </body>
 
 </html>
