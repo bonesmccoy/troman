@@ -1,34 +1,46 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+var Behavior = {
+    initScroll: function() {
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+        });
 
-// jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                event.preventDefault();
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+            });
+        });
+    },
+    initNavbar: function() {
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+
+    },
+    initHashParser: function() {
+
+        var hash = location.hash.replace('#','');
+        if (hash != ''){
+            var $section = $('#' + hash);
+            if ($section.length > 0) {
+                $('html, body').animate({ scrollTop: $section.offset().top}, 1000);
+            }
+        }
+
+    },
+    displayEmailAddresses: function() {
+        $(".mlto").attr("href", "mailto" + ":info@tr" + "ophiesofman.com");
+        $(".mdress").html("info@tr" + "ophiesofman.com");
     }
-});
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
-
+};
 var LiveShows =  {
     sortByDateAsc: function(a, b) {
         return a.dateObject - b.dateObject;
@@ -92,17 +104,9 @@ var LiveShows =  {
 };
 
 $(document).ready(function(){
-    $(window).load(function(){
-        var hash = location.hash.replace('#','');
-        if (hash != ''){
-            var $section = $('#' + hash);
-            if ($section.length > 0) {
-                $('html, body').animate({ scrollTop: $section.offset().top}, 1000);
-            }
-        }
-    });
-
-    $(".mlto").attr("href", "mailto" + ":info@tr" + "ophiesofman.com");
-    $(".mdress").html("info@tr" + "ophiesofman.com");
+    Behavior.initScroll();
+    Behavior.initNavbar();
+    Behavior.initHashParser();
+    Behavior.displayEmailAddresses();
     LiveShows.load();
 });

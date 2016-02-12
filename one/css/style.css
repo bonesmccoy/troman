@@ -478,10 +478,13 @@ body #band .row .band-member {
 }
 body #band .row .band-member h3 {
   position: absolute;
-  right: 5%;
-  bottom: 2%;
-}
-body #band .row .band-member h3 span {
+  bottom: 0;
+  font-size: 35px;
+  width: 100%;
+  text-align: right;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
   text-transform: none;
 }
 body #band .row .band-member .image {
@@ -524,13 +527,6 @@ body #band .row .band-member.moyano .image {
   }
 }
 body #music {
-  /* background-image: url(../img/studio.jpg);
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;*/
-  height: 100%;
   position: relative;
   background-color: #332323;
 }
@@ -571,7 +567,7 @@ body #music .music-container .music-body {
 }
 body #music .music-container .music-body .album-cover {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 @media (max-width: 768px) {
   body #music .music-container .music-body .album-cover {
@@ -580,7 +576,7 @@ body #music .music-container .music-body .album-cover {
 }
 body #music .music-container .music-body iframe.soundcloud-player-small {
   height: 100%;
-  max-width: 400px;
+  max-width: 300px;
   border: 0px;
 }
 @media (max-width: 768px) {
@@ -610,6 +606,28 @@ body #contact {
 body #contact .contact-body {
   display: table-cell;
   vertical-align: middle;
+  position: relative;
+}
+body #contact .contact-body .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+body #credits .modal-dialog {
+  margin-top: 25%;
+}
+body #credits .modal-dialog .modal-content {
+  -webkit-border-radius: '0px;';
+  -moz-border-radius: '0px;';
+  border-radius: '0px;';
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+body #credits .modal-dialog .modal-content .modal-body {
+  background-color: #2E2F33;
+  color: #DDECF4;
 }
 body .cc_container {
   font-family: open-sans-condensed, sans-serif !important;
