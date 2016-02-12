@@ -598,6 +598,9 @@ body #music .music-container .music-body iframe.soundcloud-player-full {
     display: block;
   }
 }
+body #live-shows .is-past-event {
+  text-decoration: line-through;
+}
 body #live-shows .no-shows {
   padding-top: 50px;
 }

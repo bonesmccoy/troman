@@ -1,19 +1,34 @@
 {
     "shows": [
         {
-            "date": "2015-01-22",
+            "date": "2016-01-22",
             "venue": "T-Chances Club, London",
             "info": "https://www.facebook.com/events/1644731675776682/"
         },
         {
-            "date": "2015-01-23",
+            "date": "2016-01-23",
             "venue": "The Fighting Cocks Bar, Kingston Upon Thames",
             "info" : "https://www.facebook.com/events/146965695675043/153969368308009/"
         },
         {
-            "date": "2015-02-20",
+            "date": "2016-02-20",
             "venue": "Underbelly, London",
-            "info": "http://www.google.com"
+            "info": "https://www.facebook.com/events/1674107996163863/"
+        },
+        {
+            "date": "2015-11-27",
+            "venue": "93ft East, London",
+            "info": "https://www.facebook.com/events/1734664120087855/"
+        },
+        {
+            "date": "2015-10-16",
+            "venue": "The Comedy Pub, London",
+            "info": "https://www.facebook.com/events/1211586975524983/"
+        },
+        {
+            "date": "2015-07-04",
+            "venue": "02 Accademy Islington, London",
+            "info": "https://www.facebook.com/events/834334899978237/"
         }
     ]
 }

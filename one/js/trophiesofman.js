@@ -30,23 +30,61 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 var LiveShows =  {
+    sortByDateAsc: function(a, b) {
+        return a.dateObject - b.dateObject;
+    },
+    sortByDateDesc: function(a, b) {
+        return  b.dateObject - a.dateObject;
+    },
+    buildShowHtmlString: function (show) {
+        var $date = (show.date) ? show.date : '';
+        var $venue = (show.venue) ? show.venue : '';
+        var $info = (typeof show.info != 'undefined') ? ('<a href="' + show.info + '">Tickets/Info</a>') : '';
 
-    load :function() {
+        var $showListString = '';
+        $showListString += '<div class="col-xs-3">' + $date + '</div>';
+        $showListString += '<div class="col-xs-6">' + $venue + '</div>';
+        $showListString += '<div class="col-xs-3 text-right">' + $info + '</div>';
+        $showListString += '<div class="col-xs-12"><hr/></div>';
+
+        return $showListString;
+
+    }, load :function() {
         $.getJSON("data/live.json", {}, function(data){
-            console.log(data);
             if (data.shows) {
+                var now = new Date();
+                var tomorrow = new Date();
+                tomorrow.setDate(now.getDate() + 1);
+
                 var $showListString = '';
-                    $(data.shows).each(function(i,show){
-                        var $date = (show.date) ? show.date : '';
-                        $showListString +=  '<div class="col-xs-3">' + $date + '</div>';
-                        var $venue = (show.venue) ? show.venue : ''
-                        $showListString += '<div class="col-xs-6">' + $venue + '</div>';
+                var showList = [];
+                var pastShowList = [];
 
-                        var $info = (typeof show.info != 'undefined') ? ('<a href="'+ show.info +'">Tickets/Info</a>') : '';
+                $(data.shows).each(function(i,show){
+                    show.dateObject = new Date(show.date);
+                    if (show.dateObject < tomorrow) {
+                        pastShowList.push(show);
+                    } else {
+                        showList.push(show);
+                    }
+                });
 
-                        $showListString += '<div class="col-xs-3 text-right">' + $info + '</div>';
-                        $showListString += '<div class="col-xs-12"><hr/></div>';
-                    });
+                showList.sort(LiveShows.sortByDateAsc);
+                pastShowList.sort(LiveShows.sortByDateDesc);
+
+                console.log(showList, pastShowList);
+
+                $(showList).each(function(i, show){
+                    $showListString += LiveShows.buildShowHtmlString(show);
+                });
+
+                $showListString += '<div class="col-xs-12 text-center"></div>';
+                $showListString += '<div class="col-xs-12 text-center"><h4>Past Shows</h4></div>';
+
+                $(pastShowList).each(function(i, show){
+                    $showListString += LiveShows.buildShowHtmlString(show);
+                });
+
                 $(".show-list").html($showListString);
             }
         }, 'json')
